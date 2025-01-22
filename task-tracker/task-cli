@@ -1,0 +1,10 @@
+#!/usr/bin/lua5.4
+--- task-cli
+
+--- @see https://leafo.net/guides/customizing-the-luarocks-tree.html
+package.path = package.path .. "./?.lua"
+
+local cmd    = require("src.cmd")
+
+cmd.init({ arg[1], arg[2], arg[3] })
+cmd.render()

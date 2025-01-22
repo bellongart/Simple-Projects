@@ -1,0 +1,9 @@
+--- task-cli
+
+
+package.path = package.path .. "./?.lua"
+
+local cmd    = require("src.cmd")
+
+cmd.init({ arg[1], arg[2], arg[3] })
+cmd.render()
